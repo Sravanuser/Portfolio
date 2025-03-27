@@ -1,36 +1,28 @@
 import React from 'react'
-import Logo from "../assets/logo.png"
-import Linkedin from "../assets/LinkedIn.svg";
-import Instagram from "../assets/Facebook.svg";
-import Facebook from "../assets/Instagram.svg";
+import { footerImage } from "/public/assets/image.js"
 
 export default function Footer() {
     return (
-        <footer className='flex-column'>
-            <div className='footer-section flexbox'>
-                <img src={Logo} alt="logo" className='footer-logo' />
-                <div className='social-media'>
-                    <SocialMedia source={Linkedin} />
-                    <SocialMedia source={Instagram} />
-                    <SocialMedia source={Facebook} />
-                </div>
+        <div className='footer'>
+            <div className='social-media'>
+                {
+                    footerImage.map((item, id) => {
+                        return (
+                            <SocialMedia source={item.src} key={id} />
+                        )
+                    })
+                }
             </div>
-            <hr />
-            <div className='footer-section flexbox'>
-                <p className=''>Made by Sravan kumar</p>
-                <div className='permissions flexbox'>
-                    <p className=''>Privacy Policy</p>
-                    <p className=''>Terms of Service</p>
-                    <p className=''>Cookie Setting</p>
-                </div>
-            </div>
-        </footer>
+            <h3>Made by Sravan Kumar</h3>
+        </div>
     )
 }
 
 
 export const SocialMedia = ({ source }) => {
     return (
-        <img src={source} alt="social-images" className='' />
+        <div className='social_media_images'>
+            <img src={source} alt="social-image" className='social_images' />
+        </div>
     )
 }

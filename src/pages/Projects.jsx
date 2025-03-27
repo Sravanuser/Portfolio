@@ -1,24 +1,17 @@
 import React from 'react'
-import github from "../assets/github.svg"
 import ProjectCard from '../components/project-card'
-import Authentication from "../assets/Authentication.webp"
-import chatApp from "../assets/chatApp.png"
-import Ecommerce from "../assets/Ecommerce.png"
 
 export default function Projects() {
   return (
-    <div className='project-container flex-column'>
-      <div className='project-heading-section flexbox'>
+    <div className='project-container' id="projects">
+      <div className='project-heading-section'>
         <p className='project-title'>My Projects</p>
-          <div className='github-btn center'>
-            <img src={github} alt="github-icon" className='github-icon' />
-            <p className='github-btn-text'>Visit My GitHub</p>
-          </div>
       </div>
-      <div className='project-card-section flexbox'>
-        <ProjectCard source={Authentication} name={"Authentication"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros"}/>
-        <ProjectCard source={chatApp} name={"ChatApp"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros"}/>
-        <ProjectCard source={Ecommerce} name={"Ecommerce"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros"}/>
+      <div className='project-card-section'>
+        <ProjectCard source={"../assets/Projects/Authentication.webp"} name={"Authentication"} text={"Secure MERN authentication and authorization project with JWT, bcrypt."} />
+        <ProjectCard source={"../assets/Projects/chatApp.svg"} name={"ChatApp"} text={"Real-time chat app with MERN stack, WebSocket, and user authentication."} />
+        <ProjectCard source={"../assets/Projects/Ecommerce.svg"} name={"Ecommerce"} text={"Full-stack eCommerce platform with MERN stack, secure payments, and user management."} />
+        <ProjectCard source={"../assets/Projects/admin.svg"} name={"Ecommerce"} text={"Role-based quiz app with MERN stack, JWT, and dynamic user permissions."} />
       </div>
     </div>
   )

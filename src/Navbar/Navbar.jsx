@@ -1,30 +1,27 @@
 import React from 'react'
-import Logo from "../assets/logo.png"
+import { GiHamburgerMenu, GiCrossMark } from "react-icons/gi";
+import { useRef } from 'react';
 
-export default function Navbar() {
+
+export default function Navbar({ scrollToSection }) {
+    const navRef = useRef();
+    function showNavbar() {
+        navRef.current.classList.toggle("responsive-nav");
+    }
     return (
-        <header className='center'>
-            <nav className='navbar center'>
-                <img src={Logo} className='navbar-logo' alt="logo" />
-                <ul className='navbar-list flexbox'>
-                    <li className='navbar-items'>
-                        <a href='#' className='navbar-links'>Home</a>
-                    </li>
-                    <li className='navbar-items'>
-                        <a href='#' className='navbar-links'>About Me</a>
-                    </li>
-                    <li className='navbar-items'>
-                        <a href='#' className='navbar-links'>Skills</a>
-                    </li>
-                    <li className='navbar-items'>
-                        <a href='#' className='navbar-links'>Projects</a>
-                    </li>
-                    <li className='navbar-items'>
-                        <a href='#' className='navbar-links'>Testimonals</a>
-                    </li>
-                </ul>
-                <button className='navbar-btn'>Contact Me</button>
+        <header>
+            <h1 className='navbar-logo'>Sravan Kumar</h1>
+            <nav ref={navRef}>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Project</a>
+                <a href="#skills">Skills</a>
+                <button className='nav-btn close-btn' onClick={showNavbar}>
+                    <GiCrossMark size={30} color='black' />
+                </button>
             </nav>
+            <button className='nav-btn' onClick={showNavbar}><GiHamburgerMenu size={30} color='black' /></button>
+            <button className='contact-btn'>Contact me</button>
         </header>
     )
 }
