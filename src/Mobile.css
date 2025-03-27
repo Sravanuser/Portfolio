@@ -439,6 +439,8 @@ input[type="textbox"] {
     }
 
     header .responsive-nav {
+        position:fixed;
+        z-index: 9999;
         transform: none;
     }
 
