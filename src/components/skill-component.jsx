@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 export default function SkillComponent({ source, name, text, skills }) {
     return (
         <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
                 type: "spring",
                 stiffness: 100,
