@@ -12,10 +12,10 @@ export default function Navbar({ scrollToSection }) {
         <header>
             <h1 className='navbar-logo'>Sravan Kumar</h1>
             <nav ref={navRef}>
-                <a href="#home">Home</a>
+                <a href="#">Home</a>
+                <a href="#skills">Skills</a>
                 <a href="#about">About</a>
                 <a href="#projects">Project</a>
-                <a href="#skills">Skills</a>
                 <button className='nav-btn close-btn' onClick={showNavbar}>
                     <GiCrossMark size={30} color='black' />
                 </button>

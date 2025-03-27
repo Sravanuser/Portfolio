@@ -4,15 +4,15 @@ import { motion } from 'framer-motion'
 export default function SkillComponent({ source, name, text, skills }) {
     return (
         <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }} // Move to original position and become visible
             transition={{
-                type: "spring",
+                type: "spring", // You can try "tween" or "spring"
                 stiffness: 100,
                 damping: 20,
                 duration: 0.5,
             }}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true }}
             className='skill-component'>
             <div className='skill-component-section'>
                 <div className='front-card'>

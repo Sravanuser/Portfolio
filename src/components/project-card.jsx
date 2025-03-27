@@ -14,7 +14,8 @@ export default function ProjectCard({ name, source, text }) {
                     damping: 20,
                     duration: 0.5,
                 }}
-                viewport={{ once: false, amount: 0.1 }} className='card-container'>
+                viewport={{ once: true }}
+                className='card-container'>
                 <div className='card-image-section'>
                     <img src={source} alt="image" className='card-image' />
                 </div>
