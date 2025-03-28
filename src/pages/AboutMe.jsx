@@ -26,19 +26,6 @@ export default function AboutMe() {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="2019 - 2023"
-                    contentStyle={{ borderTop: "5px solid #FFD54F" }}
-                    iconStyle={{ background: '#FFD54F', color: '#FFF' }}
-                    icon={<IoIosSchool />}
-                >
-                    <h3 className="vertical-timeline-element-title">Student</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Vaagdevi College of Engineering</h4>
-                    <p>
-                        Completed B.Tech in ECE from Vaagdevi College of Engineering with a focus on electronics and software development.
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2019 - 2023"
                     contentStyle={{ borderTop: "5px solid #E57373" }}
                     iconStyle={{ background: '#E57373 ', color: '#FFF' }}
                     icon={<SiFreelancer />}
@@ -47,6 +34,19 @@ export default function AboutMe() {
                     <h4 className="vertical-timeline-element-subtitle">Web Development</h4>
                     <p>
                         Designed and developed responsive websites using HTML, CSS, JavaScript, and React.js. Focused on improving user experience and visual design through clean code and modern UI frameworks.
+                    </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="2019 - 2023"
+                    contentStyle={{ borderTop: "5px solid #FFD54F" }}
+                    iconStyle={{ background: '#FFD54F', color: '#FFF' }}
+                    icon={<IoIosSchool />}
+                >
+                    <h3 className="vertical-timeline-element-title">Student</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Vaagdevi College of Engineering</h4>
+                    <p>
+                        Completed B.Tech in ECE from Vaagdevi College of Engineering with a focus on electronics and software development.
                     </p>
                 </VerticalTimelineElement>
             </VerticalTimeline>
