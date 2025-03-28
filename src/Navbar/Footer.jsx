@@ -8,7 +8,7 @@ export default function Footer() {
                 {
                     footerImage.map((item, id) => {
                         return (
-                            <SocialMedia source={item.src} key={id} />
+                            <SocialMedia source={item.src} link={item.link} key={id} />
                         )
                     })
                 }
@@ -19,9 +19,9 @@ export default function Footer() {
 }
 
 
-export const SocialMedia = ({ source }) => {
+export const SocialMedia = ({ source, link }) => {
     return (
-        <div className='social_media_images'>
+        <div className='social_media_images' onClick={() => window.location.href = link}>
             <img src={source} alt="social-image" className='social_images' />
         </div>
     )

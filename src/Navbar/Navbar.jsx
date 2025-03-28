@@ -8,6 +8,9 @@ export default function Navbar({ scrollToSection }) {
     function showNavbar() {
         navRef.current.classList.toggle("responsive-nav");
     }
+    const handleContactClick = () => {
+        window.location.href = 'mailto:sravanpatel0017@gmail.com?subject=Contact%20from%20Portfolio';
+      };
     return (
         <header>
             <h1 className='navbar-logo'>Sravan Kumar</h1>
@@ -21,7 +24,7 @@ export default function Navbar({ scrollToSection }) {
                 </button>
             </nav>
             <button className='nav-btn' onClick={showNavbar}><GiHamburgerMenu size={30} color='black' /></button>
-            <button className='contact-btn'>Contact me</button>
+            <button className='contact-btn' onClick={handleContactClick}>Contact me</button>
         </header>
     )
 }

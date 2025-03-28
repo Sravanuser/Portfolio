@@ -27,10 +27,10 @@ export const Backend = [
         "src": "/assets/Images/node.svg"
     },
     {
-        "src":"/assets/Images/mysql.svg"
+        "src": "/assets/Images/mysql.svg"
     },
     {
-        "src":"/assets/Images/express.svg"
+        "src": "/assets/Images/express.svg"
     },
 ]
 
@@ -63,12 +63,15 @@ export const Ui_Ux = [
 
 export const footerImage = [
     {
-        "src": "/assets/footerImages/Facebook.svg"
+        "src": "/assets/footerImages/Facebook.svg",
+        "link": "https://www.facebook.com/sravan.patel.1656"
     },
     {
-        "src": "/assets/footerImages/Instagram.svg"
+        "src": "/assets/footerImages/Instagram.svg",
+        "link": "",
     },
     {
-        "src": "/assets/footerImages/LinkedIn.svg"
+        "src": "/assets/footerImages/LinkedIn.svg",
+        "link": "https://www.linkedin.com/in/sravankumar-puppala"
     }
 ]
