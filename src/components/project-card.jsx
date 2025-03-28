@@ -22,7 +22,7 @@ export default function ProjectCard({ name, source, text }) {
                 <div className='card-details'>
                     <p className='card-name'>{name}</p>
                     <p className='card-text'>{text}</p>
-                    <p className='card-text' style={{ "cursor": "pointer" }}>
+                    <p className='card-text' style={{ "cursor": "pointer" }} onClick={()=>window.location.href = "https://github.com/Sravanuser"}>
                         <span className='card-view'>view in Github</span>
                     </p>
                 </div>

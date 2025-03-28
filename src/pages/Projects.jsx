@@ -11,7 +11,7 @@ export default function Projects() {
         <ProjectCard source={"../assets/Projects/Authentication.webp"} name={"Authentication"} text={"Secure MERN authentication and authorization project with JWT, bcrypt."} />
         <ProjectCard source={"../assets/Projects/chatApp.svg"} name={"ChatApp"} text={"Real-time chat app with MERN stack, WebSocket, and user authentication."} />
         <ProjectCard source={"../assets/Projects/Ecommerce.svg"} name={"Ecommerce"} text={"Full-stack eCommerce platform with MERN stack, secure payments, and user management."} />
-        <ProjectCard source={"../assets/Projects/admin.svg"} name={"Ecommerce"} text={"Role-based quiz app with MERN stack, JWT, and dynamic user permissions."} />
+        <ProjectCard source={"../assets/Projects/admin.svg"} name={"Exam Portal"} text={"Secure exams, random questions, real-time monitoring, detailed insights, leaderboard.."} />
       </div>
     </div>
   )
