@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 export default function Home() {
     const handleContactClick = () => {
-        window.location.href = 'mailto:your-email@example.com?subject=Contact%20from%20Portfolio';
+        window.location.href = 'mailto:sravanpatel0017@gmail.com?subject=Contact%20from%20Portfolio';
       };
     return (
         <div className='home-section' id="home">
